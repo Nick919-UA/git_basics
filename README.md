@@ -15,3 +15,4 @@ git status
 
 ssh -T git@github.com
 git push origin
+#added a sign with GPG KEY
