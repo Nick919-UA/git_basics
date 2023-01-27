@@ -13,3 +13,4 @@ git pull
 git push
 git status
 
+ssh -T git@github.com
