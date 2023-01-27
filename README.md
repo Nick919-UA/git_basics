@@ -14,3 +14,4 @@ git push
 git status
 
 ssh -T git@github.com
+git push origin
