@@ -47,9 +47,7 @@ def deposit(initial_sum, percent, fixed_period, set_period):
     
     per = percent / 100
     growth = (1 + per) ** (set_period / fixed_period)
-    '''
-    
-    '''
+
     one_month = 1/12
     six_month = 1/2
     
