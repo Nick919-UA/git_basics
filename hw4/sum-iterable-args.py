@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 def calc_numbers(*args):
     '''Function that calculate all numbers.
     
@@ -5,7 +7,7 @@ def calc_numbers(*args):
     I use 'isinstance()' function to check type. For check elements in list i opened them using 'for' loop.
     
     Function arguments:
-        *args - int and float argumets, lists or tuples with int and float elements
+        args(int, float, list, tuple) - int and float argumets, lists or tuples with int and float elements
     
     Function variables:
         sum_elements - service variable for summing elements in lists and tuples
@@ -31,6 +33,6 @@ def calc_numbers(*args):
         return f'{ex}\n Something wrong, look at the error message!'
 
 #for tests
-#numberlist = [5,10,200,300, 400.99, 'omg!']
-#numbertuple = (999, 6886, 'lol', 94949)
-#calc_numbers(numberlist, numbertuple, 5, 10.77, 100.50505, 300, 'he-he', 500)
+numberlist = [5,10,200,300, 400.99, 'omg!']
+numbertuple = (999, 6886, 'lol', 94949)
+print (calc_numbers(numberlist, numbertuple, 5, 10.77, 100.50505, 300, 'he-he', 500))
