@@ -212,7 +212,8 @@ sps2 = (SpaceObject('MilkyWay', 'Solar System', 'Sun', '344x1', 'planet', 'Earch
 sps3 = (SpaceObject('MilkyWay', 'Solar System', 'Sun', '9585x2', 'planet', 'Neptune', 1.02e26, 24764,'Hydrogen'))
 sps4 = (SpaceObject('MilkyWay', 'Solar System', 'Sun', '9585x2', 'Satellite', 'Moon', 7.34e22, 1737.4, 'None'))
 
-help(sps)
+# For tests of documentation.
+#help(sps)
 
 #print (sps2)
 #print (sps.__repr__())
