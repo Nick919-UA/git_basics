@@ -2,40 +2,50 @@ class Galaxy():
     '''This is galaxy class'''
     
     def __init__(self, galaxyname):
-        """Method that initializes the Galaxy class.
+        '''Method that initializes the Galaxy class.
 
         Parameters:
             galaxyname (str): The name of the galaxy.
-        """        
-        self.galaxyname = galaxyname
+        '''        
+        self.set_galaxyname(galaxyname)
 
     def set_galaxyname(self, new_galaxyname):
-        """Method for change galaxy name.
+        '''Method for change galaxy name.
 
         Parameters:
             new_galaxyname (str): The new name of the galaxy.
         
         Returns:
             String with new galaxy name.
-        """        
-        self.galaxyname =  new_galaxyname
+        '''        
+        self.__galaxyname =  new_galaxyname
         return f'Name has been changed to {self.galaxyname}'
 
+    @property
+    def galaxyname(self):
+        '''Method with decorator 'property' for portect varible 'galaxyname' to prohibit direct changes.
+        
+        Returns:
+            String value of varible 'galaxyname'.
+            '''
+            
+        return self.__galaxyname
+
     def __str__(self):
-        """Method that return ifnormation about object in class.
+        '''Method that return ifnormation about object in class.
 
         Returns:
             Name of class and value of parametr 'galaxyname'.
-        """           
+        '''           
         return f'This is {self.__class__.__name__} class\n'\
                f'The name of galaxy: {self.galaxyname}'
     
     def __repr__(self):
-        """Method that return representation of class.
+        '''Method that return representation of class.
 
         Returns:
             String with the class name and parameters.
-        """  
+        '''  
         return (f'{self.__class__.__name__}('
                 f'{self.galaxyname!r})')
 
@@ -45,23 +55,41 @@ class PlanetarySytem(Galaxy):
     Class ierarhy: Galaxy > PlanetarySytem'''
     
     def __init__(self, galaxyname, system_name, name_of_star, id_object):
-        """Method that initializes the PlanetarySytem class.
+        '''Method that initializes the PlanetarySytem class.
 
         Parameters:
             galaxyname (str): The name of the galaxy.
             system_name (str): The name of the planetary system.
             name_of_star (str): The name of the main star of system.
             id_object (str): Object id.
-        """     
+        '''     
 
         super().__init__(galaxyname)
         self.name_of_star = name_of_star
         self.system_name = system_name
-        self.id_object = id_object
+        self.set_id_object(id_object)
 
     def set_id_object(self, new_id):
-        self.id_object = new_id
+        '''Method for change id of object.
+
+        Parameters:
+            new_id (str): The new id of object.
+        
+        Returns:
+            String with new id of object.
+        '''         
+        self.__id_object = new_id
         return f'The new id of object is: {self.id_object}'
+
+    @property
+    def id_object(self):
+        '''Method with decorator 'property' for portect varible 'galaxyname' to prohibit direct changes.
+        
+        Returns:
+            String value of varible 'galaxyname'.
+        '''
+
+        return self.__id_object
 
     def __str__(self):
         return f'The main class is: {Galaxy.__name__}\n'\
@@ -71,11 +99,11 @@ class PlanetarySytem(Galaxy):
                f'The id of object: {self.id_object}\n'\
 
     def __repr__(self):
-        """Method that return representation of class.
+        '''Method that return representation of class.
 
         Returns:
             String with the class name and parameters.
-        """ 
+        ''' 
 
         return (f'{self.__class__.__name__}('
                f'{self.galaxyname!r},'
@@ -89,7 +117,7 @@ class SpaceObject(PlanetarySytem):
     Class ierarhy: Galaxy > PlanetarySytem > SpaceObject'''
 
     def __init__(self, galaxyname, system_name, name_of_star, id_object, object_type, object_name, mass, radius, atmosphere):
-        """Method that initializes the PlanetarySytem class.
+        '''Method that initializes the PlanetarySytem class.
 
         Parameters:
             galaxyname (str): The name of the galaxy.
@@ -101,7 +129,7 @@ class SpaceObject(PlanetarySytem):
             mass (int, float): The mass of object in kg.
             radius (int, float): The radius of object in km.
             atmosphere (str): The type of atmosphere on object.
-        """ 
+        ''' 
 
         super().__init__(galaxyname, system_name, name_of_star, id_object)
         self.object_type = object_type
@@ -150,11 +178,11 @@ class SpaceObject(PlanetarySytem):
                f'The atmosphere in the object: {self.object_atmosphere}\n'
 
     def __repr__(self):
-        """Method that return representation of class.
+        '''Method that return representation of class.
 
         Returns:
             String with the class name and parameters.
-        """ 
+        ''' 
 
         return (f'{self.__class__.__name__}('
             f'{self.galaxyname!r},'
@@ -184,9 +212,11 @@ sps2 = (SpaceObject('MilkyWay', 'Solar System', 'Sun', '344x1', 'planet', 'Earch
 sps3 = (SpaceObject('MilkyWay', 'Solar System', 'Sun', '9585x2', 'planet', 'Neptune', 1.02e26, 24764,'Hydrogen'))
 sps4 = (SpaceObject('MilkyWay', 'Solar System', 'Sun', '9585x2', 'Satellite', 'Moon', 7.34e22, 1737.4, 'None'))
 
+help(sps)
 
 #print (sps2)
 #print (sps.__repr__())
+#print (sps.__str__())
 
 # For tests 'gravity_calc' method of SpaceObject class
 #print(sps2.gravity_calc())
