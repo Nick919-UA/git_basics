@@ -1,3 +1,7 @@
+git config --global user.name "example"
+git config --global user.email sam@example.com
+git log --oneline --graph --decorate=short --all
+
 git add
 git branch
 git checkout
@@ -8,3 +12,7 @@ git log
 git pull
 git push
 git status
+
+ssh -T git@github.com
+git push origin
+#added a sign with GPG KEY
