@@ -27,7 +27,7 @@ class Galaxy():
         
         Returns:
             String value of varible 'galaxyname'.
-            '''
+        '''
             
         return self.__galaxyname
 
@@ -83,10 +83,10 @@ class PlanetarySytem(Galaxy):
 
     @property
     def id_object(self):
-        '''Method with decorator 'property' for portect varible 'galaxyname' to prohibit direct changes.
+        '''Method with decorator 'property' for portect varible 'id_object' to prohibit direct changes.
         
         Returns:
-            String value of varible 'galaxyname'.
+            String value of varible 'id_object'.
         '''
 
         return self.__id_object
@@ -162,7 +162,7 @@ class SpaceObject(PlanetarySytem):
         
         Returns:
             String with information about life in the object'''
-
+        
         if self.object_atmosphere == 'Oxygen':
             return f'There is life on the object {self.object_type} {self.object_nyme}'
         else:

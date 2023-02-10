@@ -2,19 +2,23 @@
 
 def calc_numbers(*args):
     '''Function that calculate all numbers.
+
     
     For correctly work of this function, i check the type of arguments.
     I use 'isinstance()' function to check type. For check elements in list i opened them using 'for' loop.
     
-    Function arguments:
-        args(int, float, list, tuple) - int and float argumets, lists or tuples with int and float elements
+    Arguments:
+        args(int, float, list, tuple): int and float argumets, lists or tuples with int and float elements.
     
-    Function variables:
-        sum_elements - service variable for summing elements in lists and tuples
-        iterable - service variable to check types 'list', 'tuple' in *args
-        item - service variable to check types in types 'int', 'float' in 'iterable'.
+    Variables:
+        sum_elements: service variable for summing elements in lists and tuples
+        iterable: service variable to check types 'list', 'tuple' in *args
+        item: service variable to check types 'int', 'float' in 'iterable'.
         
-    Function return sum of all arguments and Sum divided by the number of elements, rounded to 2 digits'''
+    Retruns:
+        String. Function return string with sum of all arguments and Sum divided by the number of elements, 
+        rounded to 2 digits.
+        '''
 
     sum_elements = 0
 
