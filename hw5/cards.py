@@ -4,7 +4,7 @@ import itertools
 import random
 import re
 
-'''Text blocks for game'''
+#Text blocks for game
 magic_rules = 'У цій грі я передбачу твоє майбтунє!'
 magic_text0 = 'Так, дивимося, шо тебе чекає:\n'
 magic_text1 = 'Хм...  Ця карта мені не подобається. Будь обережним!\n'
@@ -20,7 +20,7 @@ lacky_text5 = 'Молодець! Ти вгадав масть: '
 lacky_text6 = 'Спробуй ще раз\n Була карта: '
 
 class GameCards():
-    __slot__ = ('ranks', 'suits')
+    '''Class for Game Cards.'''
 
     ranks = list(range(6, 10+1)) + list ('JQKA')
     suits = ['\u2660 spades \u2660', 
@@ -30,14 +30,17 @@ class GameCards():
         
     @classmethod    
     def deck(cls):
+        '''Methode that returns Deck of cards'''
         return list(itertools.product(cls.ranks, cls.suits))
 
     @classmethod
     def magic(cls): 
+        '''Mini-game. Method return for cards from Deck'''
         deck = list(itertools.product(cls.ranks, cls.suits))
         return random.sample(deck, 4)
 
     def magic_play():
+        '''Method return description for cards'''
         four_cards = GameCards.magic()
         print (magic_text0)
         
@@ -57,6 +60,9 @@ class GameCards():
                 print (magic_text4)
 
     def lacky_card():
+        '''Mini game - Guess the card.
+        
+         User enters the rank or suit of card, and the method returns the result and the number of points'''
         points = 0
 
         while True:
@@ -73,11 +79,11 @@ class GameCards():
                 break
 
             if card.startswith(string):
-                points += 15
+                points += 20
                 print (lacky_text4, card, lacky_text3, points)
             
             elif string in card:
-                points += 7
+                points += 10
                 print (lacky_text5, card, lacky_text3, points)
 
             else:
