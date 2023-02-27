@@ -65,7 +65,8 @@ class City():
             token(str): open weather api token
 
         Notes:
-            A separate class (CoordinateError()) is used to except errors  when updating coordinates.
+            A separate class CoordinateError(), ApiAnswerError(), etc
+            is used to except errors when updating coordinates.
             
         Returns:
             tuple: with new coordinates'''
@@ -128,7 +129,7 @@ class Weather():
             if self.coordinates is not None:
                 self.lat = self.coordinates[0]
                 self.lon = self.coordinates[1]
-                url = f'https://api.openweathermap.org/data/2.5/weather?lat={self.lat}&lon={self.lon}&appid={token}'
+                url = f'https://api.openweathermap.org/data/2.5/weather?lat={self.lat}&lon={self.lon}&appid={token}&units=metric'
                 req = requests.get(url)
                 self.weather_data = req.json()
                 #print (f'Weather updated by coordinates {self.coordinates}')
