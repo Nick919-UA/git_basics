@@ -1,0 +1,4 @@
+initial_sum=вапвапва
+percent=7
+fixed_period=2
+set_period=2

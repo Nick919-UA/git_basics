@@ -46,20 +46,41 @@ def main(args):
     print(res)
 
 def deposit_from_file():
-    with open ('git_basics\hw8\deposit_args.txt', 'r', encoding='cp1251') as file:
-        lines = file.readlines()
+    '''Function for get argumets from file and write to file
+    Parametrs:
+        val0, val1, val2, val3 (float): internal parametrs for func.
+    Returns:
+        string: with deposit restult and write result to file.'''
+    val0 = None
+    val1 = None
+    val2 = None
+    val3 = None
 
-        val0 = float(lines[0].split('=')[1].strip())
-        val1 = float(lines[1].split('=')[1].strip())
-        val2 = float(lines[2].split('=')[1].strip())
-        val3 = float(lines[3].split('=')[1].strip())
+    with open ('git_basics\hw8\deposit_args.txt', 'r', encoding='cp1251') as file:  
+        lines = file.readlines()
         
-        result = deposit(val0, val1, val2, val3)
+        try:  
+            val0 = float(lines[0].split('=')[1].strip())
+            val1 = float(lines[1].split('=')[1].strip())
+            val2 = float(lines[2].split('=')[1].strip())
+            val3 = float(lines[3].split('=')[1].strip())
         
-        write_deposit_result(result)
-        return result
+        except Exception as ex:
+            raise ImportError(f'{ex}\nFile must contains 4 parametrs, 1 param per sting\nExemple:"key=value"')
+
+        try:
+            result = deposit(val0, val1, val2, val3)
+            write_deposit_result(result)
+            return result
+        except Exception as ex:
+            f'{ex}'
+        
 
 def write_deposit_result(result):
+    '''Function for write result to file
+
+    Args:
+        result(list): returned data from functions'''
     with open('git_basics\hw8\deposit_results.txt', 'w') as f:
         for items in result:
             f.write(f'{items}')
