@@ -68,11 +68,11 @@ def deposit_from_file():
         except Exception as ex:
             raise ImportError(f'{ex}\nFile must contains 4 parametrs, 1 param per sting\nExemple:"key=value"')
 
-        try:
+    try:
             result = deposit(val0, val1, val2, val3)
             write_deposit_result(result)
             return result
-        except Exception as ex:
+    except Exception as ex:
             f'{ex}'
         
 
