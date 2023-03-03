@@ -125,26 +125,42 @@ class ClassicDeck(GameCards):
         return self.cards
     
     def save_deck(self, deck_name):
-        '''Method for save deck in database
+        '''Method for save deck in database.
+
         Args:
-            deck_name(str): the name of saved deck
+            deck_name(str): the name of saved deck, its need to save and load deck.
+            writeback(bool): module will cache the objects in memory, 
+            allowing to modify them and save the changes back to the file.
+
+        Note: 
+            in 'deckfile['deck']' - ['deck'] is key for save and load deck.
+
         Returns: 
-            string: with result of saving'''
-        with shelve.open (deck_name, writeback=True) as deckfile:
-            deckfile['deck'] = self.cards
-            return f'Deck successfully saved!'
+            string: with result of saving.'''
+        with shelve.open (f'git_basics\hw8\{deck_name}', writeback=True) as deckfile:
+            try:
+                deckfile['deck'] = self.cards
+                return f'Deck successfully saved!'
+            except Exception as ex:
+                return f'{ex}'
     
     @classmethod
     def load_deck(self, deck_name):
-        '''Method for load deck from database
+        '''Method for load deck from database.
+
+        Method use 'classmethod' for load deck without initialization of class instance.
+
         Args:
             deck_name(str): the name of saved deck
         Returns: 
             list: with saved deck'''
-        with shelve.open (deck_name, writeback=True) as deckfile:
-            self.cards = deckfile['deck']
-            #print(f'Deck successfully loaded from database!')
-            return self.cards
+        with shelve.open (f'git_basics\hw8\{deck_name}', writeback=True) as deckfile:
+            try:
+                self.cards = deckfile['deck']
+                print(f'Deck successfully loaded from database!')
+                return self.cards
+            except Exception as ex:
+                return f'{ex}'
 
     def __str__(self):
         '''Method return string with cards in deck'''  
@@ -168,6 +184,44 @@ class SmallDeck(GameCards):
         self.cards = list(itertools.product(GameCards.ranks_small, GameCards.suits))
         return self.cards
     
+    def save_deck(self, deck_name):
+        '''Method for save deck in database.
+
+        Args:
+            deck_name(str): the name of saved deck, its need to save and load deck.
+            writeback(bool): module will cache the objects in memory, 
+            allowing to modify them and save the changes back to the file.
+
+        Note: 
+            in 'deckfile['deck']' - ['deck'] is key for save and load deck.
+
+        Returns: 
+            string: with result of saving.'''
+        with shelve.open (f'git_basics\hw8\{deck_name}', writeback=True) as deckfile:
+            try:
+                deckfile['small_deck'] = self.cards
+                return f'Deck successfully saved!'
+            except Exception as ex:
+                return f'{ex}'
+
+    @classmethod
+    def load_deck(self, deck_name):
+        '''Method for load deck from database.
+
+        Method use 'classmethod' for load deck without initialization of class instance.
+
+        Args:
+            deck_name(str): the name of saved deck
+        Returns: 
+            list: with saved deck'''
+        with shelve.open (f'git_basics\hw8\{deck_name}', writeback=True) as deckfile:
+            try:
+                self.cards = deckfile['small_deck']
+                print(f'Deck successfully loaded from database!')
+                return self.cards
+            except Exception as ex:
+                return f'{ex}'
+
     def __str__(self):
         '''Method return string with cards in deck'''     
         return str(self.cards)
@@ -177,11 +231,9 @@ if __name__ == '__main__':
 
     deck_a = ClassicDeck()
     deck_b = SmallDeck()
-    deck_c = SmallDeck()
 
-    #print(deck_a.save_deck('First_saved_deck'))
-    #get_deck = ClassicDeck().load_deck('First_saved_deck')
-    #print(get_deck)
+    #print(deck_b.save_deck('First_saved_deck'))
+    #print(SmallDeck().load_deck('First_saved_deck'))
 
 
 
