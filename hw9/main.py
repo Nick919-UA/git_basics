@@ -1,11 +1,11 @@
 from helpers import save, get_all_employers, get_employee_by_email,\
     update, save_plant, get_all_plants,\
-    get_plant_by_id, save_salon, get_salon_by_id, delete_employee, \
-    update_emploee
+    get_plant_by_id, save_salon, get_salon_by_id, delete_employee,\
+    update_user_info
 
 
 while True:
-    print("1.Add new Employee\n2.Get all Employees\n3.Get employee by email\n4. Update Employee\n5. Add plant\n6.Get all plants\n7.Get plant by id\n8.Add salon\n9.Del Employee\n10.Update Employee")
+    print("1.Add new Employee\n2.Get all Employees\n3.Get employee by email\n4. Update Employee\n5. Add plant\n6.Get all plants\n7.Get plant by id\n8.Add salon\n9.Del Employee")
     flag = int(input("Choose menu item: "))
     if flag == 1:
         email = input("Employee email: ")
@@ -32,7 +32,7 @@ while True:
             continue
     elif flag == 4:
         id = int(input("Type a id of user which you want to update: "))
-        update(id)
+        update_user_info(id)
     elif flag == 5:
         name = input("Type a name of Plant: ")
         address = input("Type an address of Plant: ")
@@ -42,7 +42,6 @@ while True:
     elif flag == 7:
         id = int(input("Id of plant: "))
         get_plant_by_id(id)
-
     elif flag == 8:
         name = input("Type a name of Salon: ")
         address = input("Type an address of Salon: ")
@@ -50,10 +49,5 @@ while True:
     elif flag == 9:
         id = int(input("Id of element which you want to delete: "))
         delete_employee(id)
-    elif flag == 10:
-        id = int(input("Id of element which you want to delete: "))
-        update_emploee(id)
-
-
 
     print("===============================================================================")

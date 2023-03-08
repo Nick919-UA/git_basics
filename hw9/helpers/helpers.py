@@ -17,20 +17,28 @@ def save(
     }
     save_to_file(new_employee, "git_basics\hw9\database\employees.json")
 
+def update_user_info(id):
+    fields = {
+        1: "email",
+        2: "first_name",
+        3: "last_name",
+        4: "phone",
+        5: "work_id",
+        6: "type"
+    }
+    print("Choose what you want to update:")
+    for key, value in fields.items():
+        print(f"{key}. {value.capitalize()}")
+    number = int(input("Choose: "))
 
-def update(id):
-    employers = get_file_data("git_basics\hw9\database\employees.json")
-    for employee in employers:
-        if id == employee["id"]:
-            employee["email"] = input("Email: ")
-            employee["first_name"] = input("First name: ")
-            employee["last_name"] = input("Last Name: ")
-            employee["phone"] = input("Phone: ")
-            employee["work_id"] = input("Work id: ")
-            employee["type"] = input("type: ")
-            
-    save_list_to_file(employers, "git_basics\hw9\database\employees.json")
-
+    try:
+        employers = get_file_data("git_basics\hw9\database\employees.json")
+        for employee in employers:
+            if id == employee["id"]:
+                employee[fields[number]] = input(f"New {fields[number].capitalize()}: ")
+        save_list_to_file(employers, "git_basics\hw9\database\employees.json")
+    except Exception as ex:
+        print(f"{ex}")
 
 def get_all_employers():
     employees = get_file_data("git_basics\hw9\database\employees.json")
