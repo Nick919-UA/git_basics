@@ -55,14 +55,10 @@ def get_employee_by_email(email):
     employees = get_file_data("git_basics\hw9\database\employees.json")
     for employee in employees:
         if employee["email"] == email:
-            print(employee["email"])
-            print(employee["first_name"])
-            print(employee["last_name"])
-            print(employee["phone"])
-            print(employee["work_id"])
-            print(employee["type"])
+            print(f'{employee["email"]}\n{employee["first_name"]}\n'
+                  f'{employee["last_name"]}\n{employee["phone"]}\n'
+                  f'{employee["work_id"]}\n{employee["type"]}\n')
             return employee
-
 
 def save_plant(name, address):
     new_plant = {"name": name, "address": address}
@@ -80,8 +76,11 @@ def get_plant_by_id(id):
     plants = get_file_data("git_basics\hw9\database\salons.json")
     for plant in plants:
         if plant["id"] == id:
-            print(plant["name"])
-            print(plant["address"])
+            try:
+                print(plant["name"])
+                print(plant["address"])
+            except Exception as ex:
+                print (f' dfgdfg, {ex}')
 
 
 def save_salon(name, address):
