@@ -34,6 +34,8 @@ while True:
                     get_plant_by_id(int(employee["work_id"]))
                 elif employee["type"] == "salon":
                     get_salon_by_id(int(employee["work_id"]))
+                elif employee["type"] == "sales dep":
+                    get_sales_dep_by_id(int(employee["work_id"]))
     elif flag == 4:
         id = int(input("Type a id of user which you want to update: "))
         update_user_info(id)
