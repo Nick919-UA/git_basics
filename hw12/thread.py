@@ -2,6 +2,7 @@ import threading
 import requests
 import json
 
+#'cur_dict' need to collect all data from API
 cur_dict = {}
 
 def save_cache(name, data):
@@ -65,10 +66,10 @@ def currency(cur_dict):
         print(f'The best USD/UAH buy rate is: {min_key}, {min_value}')
         return f'The best bay USD/UAH buy rate is: {min_key}, {min_value}'
 
-get1 = threading.Thread(target=get_pryvat)
-get2 = threading.Thread(target=get_nbu)
-get3 = threading.Thread(target=get_exim)
-get4 = threading.Thread(target=currency, args=(cur_dict,))
+get1 = threading.Thread(target=get_pryvat, name='Pryvat Bank API thread')
+get2 = threading.Thread(target=get_nbu, name='NBU API thread')
+get3 = threading.Thread(target=get_exim, name='Exim Bank API thread')
+get4 = threading.Thread(target=currency, args=(cur_dict,), name='Best currency buy rate')
 
 # Start the first two threads
 get1.start()
