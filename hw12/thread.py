@@ -79,12 +79,12 @@ get2 = threading.Thread(target=get_nbu, name='NBU API thread')
 get3 = threading.Thread(target=get_exim, name='Exim Bank API thread')
 get4 = threading.Thread(target=currency, args=(cur_dict,), name='Best currency buy rate')
 
-# Start the first two threads
+# Start the first three threads
 get1.start()
 get2.start()
 get3.start()
 
-# Wait for the first two threads to finish
+# Wait for the first three threads to finish
 get1.join()
 get2.join()
 get3.join()
