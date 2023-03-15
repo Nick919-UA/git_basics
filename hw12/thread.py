@@ -40,7 +40,7 @@ def get_pryvat():
         print (f'{ex}')
 
 def get_nbu():
-    '''Function for get USD buy rate from NBU by API url. 
+    '''Function for get USD buy rate from National bank of Ukraine by API url. 
     Returns usd/uah buy rate'''
     url = 'https://bank.gov.ua/NBUStatService/v1/statdirectory/exchange?json'
     patch = fr'git_basics\hw12\data\nbu_data.json'
@@ -74,20 +74,25 @@ def currency(cur_dict):
         print(f'The best USD/UAH buy rate is: {m_key}, {m_value} uah for 1 dollar')
         return f'The best bay USD/UAH buy rate is: {m_key}, {m_value} uah for 1 dollar'
 
-get1 = threading.Thread(target=get_pryvat, name='Pryvat Bank API thread')
-get2 = threading.Thread(target=get_nbu, name='NBU API thread')
-get3 = threading.Thread(target=get_exim, name='Exim Bank API thread')
-get4 = threading.Thread(target=currency, args=(cur_dict,), name='Best currency buy rate')
+def run_threads(cur_dict):
+    '''Function for run threads, returns best USD/UAH buy rate'''
+    #creating threads
+    get1 = threading.Thread(target=get_pryvat, name='Pryvat Bank API thread')
+    get2 = threading.Thread(target=get_nbu, name='NBU API thread')
+    get3 = threading.Thread(target=get_exim, name='Exim Bank API thread')
+    get4 = threading.Thread(target=currency, args=(cur_dict,), name='Currency buy rate thread')
 
-# Start the first three threads
-get1.start()
-get2.start()
-get3.start()
+    # Start the first three threads
+    get1.start()
+    get2.start()
+    get3.start()
 
-# Wait for the first three threads to finish
-get1.join()
-get2.join()
-get3.join()
+    # Wait for the first three threads to finish
+    get1.join()
+    get2.join()
+    get3.join()
 
-#start last thread
-get4.start()
+    #start last thread
+    get4.start()
+
+run_threads(cur_dict)
