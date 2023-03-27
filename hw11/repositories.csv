@@ -1,0 +1,121 @@
+django,django/django,False,The Web framework for perfectionists with deadlines.
+DjangoBlog,liangliangyy/DjangoBlog,False,🍺基于Django的博客系统
+django-rest-framework,encode/django-rest-framework,False,Web APIs for Django. 🎸
+django-cms,django-cms/django-cms,False,The easy-to-use and developer-friendly enterprise CMS powered by Django 
+cookiecutter-django,cookiecutter/cookiecutter-django,False,Cookiecutter Django is a framework for jumpstarting production-ready Django projects quickly.
+django-allauth,pennersr/django-allauth,False,"Integrated set of Django applications addressing authentication, registration, account management as well as 3rd party (social) account authentication."
+django-oscar,django-oscar/django-oscar,False,Domain-driven e-commerce for Django
+mezzanine,stephenmcd/mezzanine,False,CMS framework for Django
+django-haystack,django-haystack/django-haystack,False,Modular search for Django
+django-ex,sclorg/django-ex,False,Django Example
+django-extensions,django-extensions/django-extensions,False,This is a repository for collecting global custom management extensions for the Django Framework. 
+awesome-django,wsvincent/awesome-django,False,A curated list of awesome things related to Django
+django-tastypie,django-tastypie/django-tastypie,False,Creating delicious APIs for Django apps since 2010.
+django2.0-course,HaddyYang/django2.0-course,False,Django2.0视频教程相关代码（杨仕航）
+django-ecommerce,justdjango/django-ecommerce,False,An e-commerce website built with Django
+django-shop,awesto/django-shop,False,A Django based shop system
+DjangoUeditor,zhangfisher/DjangoUeditor,False,DjangoUeditor
+django-sspanel,Ehco1996/django-sspanel,False,用 diango 开发的 shadowsocks 面板
+graphene-django,graphql-python/graphene-django,False,Integrate GraphQL into your Django project.
+django-jet,geex-arts/django-jet,False,Modern responsive template for the Django admin interface with improved functionality. We are proud to announce completely new Jet. Please check out Live Demo
+django-debug-toolbar,jazzband/django-debug-toolbar,False,A configurable set of panels that display various debug information about the current request/response.
+django-filter,carltongibson/django-filter,False,A generic system for filtering Django QuerySets based on user selections
+django-ckeditor,django-ckeditor/django-ckeditor,False,Django admin CKEditor integration.
+django-taggit,jazzband/django-taggit,False,Simple tagging for django
+django-storages,jschneier/django-storages,False,https://django-storages.readthedocs.io/
+channels,django/channels,False,Developer-friendly asynchrony for Django
+django-grappelli,sehmaschine/django-grappelli,False,A jazzy skin for the Django Admin-Interface (official repository).
+django-DefectDojo,DefectDojo/django-DefectDojo,False,DefectDojo is a DevSecOps and vulnerability management tool.
+djangoproject.com,django/djangoproject.com,False,Source code to djangoproject.com
+djangorestframework-simplejwt,jazzband/djangorestframework-simplejwt,False,A JSON Web Token authentication plugin for the Django REST Framework.
+flask,pallets/flask,False,The Python micro framework for building web applications.
+flasky,miguelgrinberg/flasky,False,"Companion code to my O'Reilly book ""Flask Web Development"", second edition."
+helloflask,greyli/helloflask,False,"Hello, Flask!"
+awesome-flask,humiaozuzu/awesome-flask,False,A curated list of awesome Flask resources and plugins
+flask-website,pallets/flask-website,False,"The Flask website, built with Flask!"
+flask-admin,flask-admin/flask-admin,False,Simple and extensible administrative interface framework for Flask
+flask-restful,flask-restful/flask-restful,False,Simple framework for creating REST APIs
+flask-login,maxcountryman/flask-login,False,Flask user session management.
+flaskbb,flaskbb/flaskbb,False,A classic Forum Software in Python using Flask.
+flask-boilerplate,realpython/flask-boilerplate,False,"Boilerplate template for a Python Flask application with Flask-SQLAlchemy, Flask-WTF, Fabric, Coverage, and Bootstrap"
+flask-sqlalchemy,pallets-eco/flask-sqlalchemy,False,Adds SQLAlchemy support to Flask
+FlaskIntroduction,jakerieger/FlaskIntroduction,False,Repo for my tutorial on freeCodeCamp.org
+discover-flask,realpython/discover-flask,False,Full Stack Web Development with Flask.
+cookiecutter-flask,cookiecutter-flask/cookiecutter-flask,False,"A flask template with Bootstrap, asset bundling+minification with webpack, starter templates, and registration/authentication. For use with cookiecutter."
+flask,roytuts/flask,False,
+Flask-AppBuilder,dpgaspar/Flask-AppBuilder,False,"Simple and rapid application development framework, built on top of Flask. includes detailed security, auto CRUD generation for your models, google charts and much more. Demo (login with guest/welcome) - http://flaskappbuilder.pythonanywhere.com/"
+Flask-SocketIO,miguelgrinberg/Flask-SocketIO,False,Socket.IO integration for Flask applications.
+flask-bootstrap,mbr/flask-bootstrap,False,Ready-to-use Twitter-bootstrap for use in Flask.
+rest-apis-flask-python,tecladocode/rest-apis-flask-python,False,"Projects and e-book for our course, REST APIs with Flask and Python"
+flask-restplus,noirbizarre/flask-restplus,False,"Fully featured framework for fast, easy and documented API development with Flask"
+FlaskSeries,jimdevops19/FlaskSeries,False,This is the Code from my Flask Series - JimShapedCoding. Each Folder is a checkpoint where we stopped at that particular episode number
+flask-base,hack4impact/flask-base,False,"A simple Flask boilerplate app with SQLAlchemy, Redis, User Authentication, and more."
+flaskr-tdd,mjhea0/flaskr-tdd,False," Flaskr: Intro to Flask, Test-Driven Development (TDD), and JavaScript"
+python-sample-vscode-flask-tutorial,microsoft/python-sample-vscode-flask-tutorial,False,Sample code for the Flask tutorial in the VS Code documentation
+flaskSaaS,alectrocute/flaskSaaS,False,"A great starting point to build your SaaS in Flask & Python, with Stripe subscription billing 🚀"
+xzceb-flask_eng_fr,ibm-developer-skills-network/xzceb-flask_eng_fr,False,flask_enf_fr
+flask-security,mattupstate/flask-security,False,Quick and simple security for Flask applications
+flaskex,anfederico/flaskex,False,Simple flask example for quick prototypes and small applications
+flask-oauthlib,lepture/flask-oauthlib,False,YOU SHOULD USE https://github.com/lepture/authlib
+uwsgi-nginx-flask-docker,tiangolo/uwsgi-nginx-flask-docker,False,Docker image with uWSGI and Nginx for Flask applications in Python running in a single container. Optionally with Alpine Linux.
+requests,psf/requests,False,"A simple, yet elegant, HTTP library."
+Requests,WordPress/Requests,False,Requests for PHP is a humble HTTP request library. It simplifies how you interact with other sites and takes away all your worries.
+requests-html,psf/requests-html,False,Pythonic HTML Parsing for Humans™
+requests-oauthlib,requests/requests-oauthlib,False,OAuthlib support for Python-Requests!
+requests-for-research,openai/requests-for-research,False,A living collection of deep learning problems
+jsr,mercyblitz/jsr,False,Java Specification Requests 
+requests,asmcos/requests,False,A golang HTTP client library. Salute to python requests.
+request,request/request,False,🏊🏾 Simplified HTTP request client.
+read_requests,wangshunping/read_requests,False,python requests 源码阅读，学习更pythonic 的python代码写法。
+cpr,libcpr/cpr,False,"C++ Requests: Curl for People, a spiritual port of Python Requests."
+requests-futures,ross/requests-futures,False,Asynchronous Python HTTP Requests for Humans using Futures
+robotframework-requests,MarketSquare/robotframework-requests,False,Robot Framework keyword library wrapper for requests
+grequests,spyoungtech/grequests,False,Requests + Gevent = <3
+pull-requests,btholt/pull-requests,False,A sample repo for the Intro to Web Dev course for Frontend Masters
+reqwest,ded/reqwest,False,browser asynchronous http requests
+requests-cache,requests-cache/requests-cache,False,Persistent HTTP cache for python requests
+WordPress,WordPress/WordPress,False,"WordPress, Git-ified. This repository is just a mirror of the WordPress subversion repository. Please do not send pull requests. Submit pull requests to https://github.com/WordPress/wordpress-develop and patches to https://core.trac.wordpress.org/ instead."
+lazyweb-requests,h5bp/lazyweb-requests,False,Get projects and ideas built by the community
+requests3,kennethreitz-archive/requests3,False,"Requests 3.0, for Humans and Machines, alike. 🤖"
+semantic-pull-requests,zeke/semantic-pull-requests,False,:robot: Let the robots take care of the semantic versioning
+collectd,collectd/collectd,False,The system statistics collection daemon. Please send Pull Requests here!
+learn4haskell,kowainik/learn4haskell,False,👩‍🏫 👨‍🏫 Learn Haskell basics in 4 pull requests
+HeaderEditor,FirefoxBar/HeaderEditor,False,"Manage browser's requests, include modify the request headers and response headers, redirect requests, cancel requests"
+c-ares,c-ares/c-ares,False,A C library for asynchronous DNS requests
+requests,wangluozhe/requests,False,用于快速请求HTTP或HTTPS，并支持修改ja3指纹
+vscode-pull-request-github,microsoft/vscode-pull-request-github,False,GitHub Pull Requests for Visual Studio Code
+laravel-query-builder,spatie/laravel-query-builder,False,Easily build Eloquent queries from API requests
+requests-ip-rotator,Ge0rg3/requests-ip-rotator,False,A Python library to utilize AWS API Gateway's large IP pool as a proxy to generate pseudo-infinite IPs for web scraping and brute forcing.
+hound,houndci/hound,False,Automated code review for GitHub pull requests.
+mention-bot,facebookarchive/mention-bot,False,Automatically mention potential reviewers on pull requests.
+LollipopShowcase,mikepenz/LollipopShowcase,False,"A simple app to showcase Androids Material Design and some of the cool new cool stuff in Android Lollipop. RecyclerView, CardView, ActionBarDrawerToggle, DrawerLayout, Animations, Android Compat Design, Toolbar"
+lolMiner-releases,Lolliedieb/lolMiner-releases,False,
+LolliPin,omadahealth/LolliPin,False,A Material design Android pincode library. Supports Fingerprint.
+LOLBAS,LOLBAS-Project/LOLBAS,False,Living Off The Land Binaries And Scripts - (LOLBins and LOLScripts)
+lolcommits,lolcommits/lolcommits,False,:camera: git-based selfies for software developers
+LOLBAS,api0cradle/LOLBAS,False,Living Off The Land Binaries And Scripts - (LOLBins and LOLScripts)
+lolcat,busyloop/lolcat,False,Rainbows and unicorns!
+LollipopGo,Golangltd/LollipopGo,False,"稳定分支2.9.X 版本已更新，由【Golang语言游戏服务器】维护，全球服游戏服务器及区域服框架,目前协议支持websocket、http、KCP、TCP及RPC，采用状态同步(帧同步内测)，愿景：打造MMO多人竞技游戏框架！ 功能持续更新中... ..."
+LOL,RozDavid/LOL,False,LOL: Lidar-only Odometry and Localization in 3D point cloud maps
+ZuAnBot,liuke-wuhan/ZuAnBot,False,祖安助手：英雄联盟（League Of Legends）一键喷人，LOL游戏和客户端中可用。只为反击喷子！
+R3nzSkin,R3nzTheCodeGOD/R3nzSkin,False,Skin changer for League of Legends (LOL)
+PreLollipopTransition,takahirom/PreLollipopTransition,False,Simple tool which help you to implement activity and fragment transition for pre-Lollipop devices.
+primitive.js,ondras/primitive.js,False,JS port of primitive.lol
+hh-lol-prophet,real-web-world/hh-lol-prophet,False,"lol 对局先知 上等马 牛马分析程序 选人阶段判断己方大爹 大坑, 明确对局目标 基于lol client api 合法不封号"
+LollipopContactsRecyclerViewFastScroller,AndroidDeveloperLB/LollipopContactsRecyclerViewFastScroller,False,A sample of how to mimic the way that the contacts app handles a Fast-Scroller for a RecyclerView
+lolimeow,baomihuahua/lolimeow,False,wordpress主题 lolimeow 
+Lol,cpeikert/Lol,False,Λ ⚬ λ: Functional Lattice Cryptography
+lol_dba,plentz/lol_dba,False,"lol_dba is a small package of rake tasks that scan your application models and displays a list of columns that probably should be indexed. Also, it can generate .sql migration scripts."
+LoLHuman,LoL-Human/LoLHuman,False,LoL Human APIs
+keys-generator,SjorsO/keys-generator,False,Key generator for https://keys.lol
+lolviz,parrt/lolviz,False,"A simple Python data-structure visualization tool for lists of lists, lists, dictionaries; primarily for use in Jupyter notebooks / presentations"
+Android-Material-Design-for-pre-Lollipop,Suleiman19/Android-Material-Design-for-pre-Lollipop,False,"Various UI implementations, animations & effects  based on Material Design compatible with pre Lollipop devices as well. (Work in progess)"
+The-LoliBot-MD,elrebelde21/The-LoliBot-MD,False,"𝙃𝙤𝙡𝙖 👋 𝘽𝙞𝙚𝙣𝙫𝙚𝙣𝙞𝙙𝙤 🤗 𝙚𝙨𝙩𝙚 𝙚𝙨 𝙚𝙡 𝙧𝙚𝙥𝙤𝙨𝙞𝙩𝙤𝙧𝙞𝙤 𝙤𝙛𝙞𝙘𝙞𝙖𝙡 𝙙𝙚𝙡 𝙏𝙝𝙚 𝙇𝙤𝙡𝙞𝘽𝙤𝙩-𝙈𝘿.  𝘼𝙦𝙪𝙞 𝙨𝙚 𝙧𝙚𝙖𝙡𝙞𝙯𝙖𝙣 𝙖𝙘𝙩𝙪𝙖𝙡𝙞𝙯𝙖𝙘𝙞𝙤𝙣𝙚𝙨,  𝙎𝙞 𝙩𝙚 𝙖𝙜𝙧𝙖𝙙𝙖 𝙚𝙡 𝙗𝙤𝙩 𝙢𝙚 𝙥𝙪𝙚𝙙𝙚 𝙧𝙚𝙜𝙖𝙡𝙖𝙧 𝙪𝙣𝙖 🌟,  𝙚𝙨𝙥𝙚𝙧𝙤 𝙦𝙪𝙚 𝙜𝙪𝙨𝙩𝙚 𝙚𝙡 𝙗𝙤𝙩 😊"
+LOLBAS222,homjxi0e/LOLBAS222,False,"APT || Execution || Launch || APTs || ( Authors harr0ey, bohops )"
+lol-html,cloudflare/lol-html,False,Low output latency streaming HTML parser/rewriter with CSS selector-based API
+lolcode-spec,justinmeza/lolcode-spec,False,LOLCODE language specification archives and development.
+sinatras-hat,nakajima/sinatras-hat,False,lol
+lollipops,joiningdata/lollipops,False,Lollipop-style mutation diagrams for annotating genetic variations.
+loli_profiler,Tencent/loli_profiler,False,Memory instrumentation tool for android app&game developers.
+omg.lol,neatnik/omg.lol,False,Cool stuff for omg.lol
+jangouts,jangouts/jangouts,False,Videoconferencing based on WebRTC and Janus Gateway with an UI inspired by Google Hangouts
